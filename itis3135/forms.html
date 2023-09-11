@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Waghchoure's Amazing Wallaby || ITIS-3135 || Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+    <h1>Aman Waghchoure's Amazing Wallaby || ITIS-3135</h1>
+    
+    <nav class="topnav">
+        <a href = "./" >Homepage</a>
+        <a href = "introduction.html">Introduction</a>
+        <a href = "contract.html">Contract</a>
+        <a href = "tables.html">Tables</a>
+        <a href ="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main class="formspage">
+        <h1 id="title" class="centered">Job Application</h1>
+        <p id="description" class="centered">Thank you for taking the time to complete this application!</p>
+        <form id="survey-form" method="post" action='#'>
+        <fieldset>
+          <label for="name" id="name-label" class="block">Enter Your Name:   <input id="name" name="name" type="text" required placeholder="John Doe" /></label>
+        
+          <label for="email" id="email-label" class="block">Enter Your Email: <input id="email" name="email" type="email" required placeholder="JohnDoe@gmail.com"/></label>
+        
+          <label for="number" id="number-label" class="block">Input your phone number: <input id="number" type="number" name="number" min="1000000000" max="10000000000" required placeholder="704-000-000"/></label>  
+        
+        
+        </fieldset>
+        <fieldset>
+            <h3>Summit resume below:</h3>
+            <input type="file" id="myFile" name="filename" required>
+            <h3>What fields are you most looking to find a job?</h3>
+                <label for="1">
+                  <input id="1" type="checkbox" name="jobfield" class="inline" value="1"/>Technology</label>
+                <label for="2">
+                    <input id="2" type="checkbox" name="jobfield" class="inline" value="2"/>Management</label>
+                <label for="3">
+                    <input id="3" type="checkbox" name="jobfield" class="inline" value="2"/>Sales</label>
+                <label for="4">
+                    <input id="4" type="checkbox" name="jobfield" class="inline" value="2"/>Marketing</label>
+            <h3>What is your top choice?</h3>
+                <label for="topchoice1">
+                  <input id="topchoice1" type="radio"  name="topchoice" class="inline" value="website-setup"/> Technology
+                </label>
+               <label for="topchoice2">
+                  <input id="topchoice2" type="radio"  name="topchoice" class="inline" value="github-setup"/> Management 
+                </label>
+                <label for="topchoice3">
+                  <input id="topchoice3" type="radio"  name="topchoice" class="inline" value="introductions"/>Sales 
+                </label>
+                <label for="topchoice4">
+                    <input id="topchoice4" type="radio"  name="topchoice" class="inline" value="introductions"/>Marketing
+                  </label>
+                <h3>Is there anything we should know?</h3>
+               <label for="favorite">
+                  <textarea id="favorite" name="favorite" rows="3" cols="30" placeholder="I have experience in x,y, and z..."></textarea>
+                </label> 
+                <label for="gpa" class="block"><h3>When are you eligible to work after receiving the job offer?</h3>
+                    <select id="dropdown" name="gpa" required>
+                      <option value="">(select one)</option>
+                      <option value="1">Less Than 1 Week</option>
+                      <option value="2">1 - 2 Weeks</option>
+                      <option value="3">2 - 3 Weeks</option>
+                      <option value="4">More than 3 Weeks</option>
+                    </select>
+                  </label>     
+        </fieldset>
+        <fieldset class="boundright">
+        <input type="reset">
+        <input type="submit" value="Submit" id="submit" />
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+        <nav class="bottomnav">
+        <a href = "https://webpages.charlotte.edu/awaghcho/">CLT Webpage</a>
+        ||
+        <a href = "https://github.com/AmanW-GitHub">Github</a>
+        ||
+        <a href = "https://amanw-github.github.io/">Github Pages</a>
+        ||
+        <a href = "https://amanw-github.github.io/itis3135/">Github Course Page</a>
+        ||
+        <a href = "https://www.freecodecamp.org/amanwaghcho">FreeCodeCamp</a>
+        ||
+        <a href = "https://www.codecademy.com/profiles/amanwagchcho">Codecademy</a>
+        ||
+        <a href = "http://www.linkedin.com/in/aman-waghchoure-68052b254">LinkedIn</a>
+        </nav>
+        <p>Page Built by <a href = "waghchouredesigns.com/">Waghchoure Designs</a> © 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!"></a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+            CSS!">
+        </a>
+    </footer>

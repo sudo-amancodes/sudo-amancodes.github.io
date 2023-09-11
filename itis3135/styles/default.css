@@ -18,3 +18,27 @@ h1{
     background-color: #ddd;
     color: grey;
 }
+.formspage{
+    font-family: "charteritc", Helvetica;
+    width:700px;
+    margin:35px auto;
+    background: linear-gradient(120deg, #ffffff, antiquewhite 99%);
+    border-radius: 10px; 
+    border-style: solid;    
+
+}
+.block{
+    display: block;
+    margin-top: 15px;
+    
+}
+.centered{
+    text-align: center;
+
+}
+fieldset {
+    border: 0;
+}
+.boundright{
+    text-align: right;
+}
