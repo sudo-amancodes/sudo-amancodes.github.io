@@ -42,3 +42,32 @@ fieldset {
 .boundright{
     text-align: right;
 }
+.middleul{
+    display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.simple{
+    border-collapse: collapse;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+.simple tr, .simple td, .complex tr, .complex td, .complex th{
+    border: 1px solid black;
+    padding: 10px;
+}
+.complex{
+    border-collapse: collapse;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+}
+.complex tr:nth-child(odd){
+    background-color: aqua;
+}
