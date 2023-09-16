@@ -2,7 +2,121 @@
 <html lang="en">
 <head>
     <style>
+        body{
+            background-image: url("pexels-luis-quintero-2148216.jpg");
+            background-size: cover;
+            background-position: 100% 25%;
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            min-width: 500px;
+            color: #fff;
+            background-color: #000;
+        }
+        .blurredblock{
+            backdrop-filter: blur(1px);
+            margin: 0%;
+        }
+        a:link {
+            color: #94958B;
+          }
+          
+          /* visited link */
+          a:visited {
+            color: #94958B;
+          }
+          
+          /* mouse over link */
+          a:hover {
+            color: hotpink;
+          }
+        header div{
+            display:inline-flex;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        img{
+            width: 125px;
+            height: 75px;
+        }
+
+        main h2{
+            text-align: center;
+        }
         
+        .blocked1{
+            padding: 10px;
+
+            margin: 0px 350px 0px 350px;
+            max-width: fit-content;
+            min-width: 50px;
+            background-color: #000;
+            border-radius: 30px;
+            
+        }
+        .blocked2{
+            padding: 10px;
+            min-width: 500px;
+            background-color: #94958B;
+            border-radius: 20px;
+        }
+        #belowcomputer{
+            margin: 0px 100px 0px 100px;
+            
+        }
+        p{
+            font-size: 2em;
+            margin: 1em;
+        }
+        .list{
+            margin: 70px 280px 70px 280px;
+
+            background-color: #000;
+            padding:2px 20px;
+            border-radius: 35px;
+            }
+        #listitems{
+            
+            padding: 10px 50px;
+            min-height: 50px;
+            font-size: 1em;
+            background-color: antiquewhite;
+            color: #000;
+            border-radius: 26px;
+        }
+        #bottompage{
+            background: linear-gradient( #000);
+        
+        }
+        .nav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 25px;
+            background: rgba(184, 113, 96, 0.5);
+            border-radius: 100px;
+            
+          }
+          footer{
+            text-align: center;
+          }
+          #contactinfo p{
+            font-size: 15px;
+          }
+          #contactinfo h2{
+            font-size: 25px;
+
+          }
+          .listblock{
+            backdrop-filter: blur(10px);
+          }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +125,78 @@
 </head>
 <body>
     <header>
-    <h1>Waghchoure Corporation</h1>
+        <div>
+            <img src="./logo.png" alt="text logo">
+            <h1> Waghchoure Corporation</h1>
+        </div>
     </header>
     <main>
+        <div class="blurredblock">
+        <div class="blocked1">
+        <div class="blocked2">
         <h2>
-            "Designs That Build With You"
+            Waghchoure Corporation Services
         </h2>
         <p>
             At Waghchoure Corporation, we are dedicated to crafting an exceptional web experience. With every click you will get enthralled into the website. With a team of highly skilled designers and developers, we specialize in creating visually stunning and user-friendly websites tailored to meet your unique business needs. Our passion for design and cutting-edge technology ensures that every project we undertake is executed with precision and creativity.
         </p>
-        <ul>
-            <li>
+        </div>
+        </div>
+        </div>
+        <div class="listblock">
+        <div class="list">
+            <ul id="listitems">
+                <li>
+                    Cutting-Edge Designs: Our team of expert designers employs the latest technologies and trends to create visually stunning and modern websites that leave a lasting impression.
+                </li>
+                <li>
+                    Tailored Solutions: We understand that every business is unique. That's why we take a personalized approach to ensure our web solutions are perfectly aligned with your specific goals and requirements.
+                </li>
+                <li>
+                    Seamless User Experience: Our focus on user-centric design guarantees that every visitor enjoys an intuitive and seamless browsing experience, resulting in higher engagement and conversions.
+                </li>
+                <li>
+                    Rapid Turnaround: With efficient project management and streamlined workflows, we deliver exceptional websites in record time without compromising on quality. 
+                </li>
+                <li>
+                    Mobile Optimization: In today's mobile-first world, we prioritize responsive design, ensuring your website looks and performs flawlessly across all devices and screen sizes.
+                </li>
+                <li>
+                    SEO-Driven Strategies: We implement best practices for search engine optimization (SEO) to boost your online visibility, driving organic traffic and improving your website's rankings.
+                </li>
+                <li>
+                    Dedicated Support: Our commitment to client satisfaction extends beyond project completion. We offer ongoing support and maintenance to ensure your website remains up-to-date and secure.
+                </li>
+            </ul>
+    </div>
+    </div>  
+        
+            <div id="bottompage">
+            <div class="blocked1">
 
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-        </ul>
-        <p>
-            Whether you're a startup looking to establish your online presence or an established business seeking a website makeover, we have the expertise to deliver results that exceed your expectations. Our commitment to excellence, combined with our client-centric approach, sets us apart as leaders in the industry. Explore our portfolio and discover the innovative solutions we've provided for our satisfied clients. Contact us today to embark on a journey towards a captivating online presence that drives growth and success for your business.
-        </p>
-        <p>
-            Contact us:
-        </p>
-        <p>
+            <div class="blocked2 newcolor" >
+                <p id="belowcomputer">
+                    We look forward to creating a website that not only meets your requirements but also surpasses your expectations. Let's bring your vision to life!
+                </p>
+            
+         </div>
+        </div>
 
-        </p>
+        
+    </div>
     </main>
     <footer>
-        <nav>
-        
-        <p>Back To <a href = "https://webpages.charlotte.edu/awaghcho/">ITSC-3135</a></p>
-        </nav>
-        <p>Waghchoure Corporation ©2023</p>
+        <ul class="nav">
+            
+            <li>Back To <a href = "https://webpages.charlotte.edu/awaghcho/itis3135">ITSC-3135</a> </li>
+            <li>Waghchoure Corporation ©2023</li>
+        </ul>
+        <div id="contactinfo">
+            <h2>Contact Information</h2>
+            <p>Email: info@waghchoure.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 1234 Imaginary Street, Suite 567, Dreamville, USA</p>
+        </div>
     </footer>
 </body>
 </html>
