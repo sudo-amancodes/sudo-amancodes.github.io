@@ -27,6 +27,19 @@ h1{
     border-style: solid;    
 
 }
+a:link {
+    color: #013147;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #94958B;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
 .block{
     display: block;
     margin-top: 15px;
