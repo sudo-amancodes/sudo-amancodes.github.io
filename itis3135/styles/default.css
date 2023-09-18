@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(180, 167, 164);
 }
 h1{
    color:black; 
@@ -16,7 +16,8 @@ h1{
 }
 .topnav a:hover{
     background-color: #ddd;
-    color: grey;
+    color: hotpink;
+
 }
 .formspage{
     font-family: "charteritc", Helvetica;
@@ -33,7 +34,8 @@ a:link {
   
   /* visited link */
   a:visited {
-    color: #94958B;
+    color: #013147;
+    text-decoration: None;
   }
   
   /* mouse over link */
