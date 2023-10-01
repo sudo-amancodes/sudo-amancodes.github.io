@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Waghchoure's Awesome Wallaby || ITIS-3135 || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <main>
+    <div data-include="components/header.html"></div>
+        <h2>
+        First Scripts
+    </h2>
+    <h3 id="date-time">     
+    </h3>
+    <form id="inputForm">
+        <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="feeling">How are you feeling?</label>
+            <input type="text" id="feeling" required><br>
+            <button type="submit">Submit</button>
+    </form>
+    <div id="greeting"></div>
+    <label for="number">Favorite Number: </label>
+    <input type="text" id="number" min="0" max="10" required><br>
+
+    <button onclick="favoritenum()">Submit</button>
+    <br>  <br>
+    <button onclick="insult()">Provide Insult</button>
+    <button onclick="feed()">Feed The Wallaby</button>
+    <button onclick="sleep()">Wallaby Go To Bed</button>
+    <button onclick="wakeup()">Wake Up The Wallaby</button>
+    <button onclick="entertain()">Entertain</button>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="./scripts/defaultscripts.js">
+    </script>
+    </main> 
+</body>
+</html>
