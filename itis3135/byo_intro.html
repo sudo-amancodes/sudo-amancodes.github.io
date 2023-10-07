@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Waghchoure's Awesome Wallaby || ITIS-3135 || Contract</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+    <form id="form">
+        <h2 class="center">BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" required placeholder="Aman">
+        <br>
+        <label for="mascot">Mascot</label>
+        <input type="text" id="mascot" required placeholder="Awesome Wallaby">
+        <br>
+        <label for="image">Image</label>
+        <input type="file" id="image" accept=".png, .jpg" required>
+        <br>
+        <label for="imageCaption">Image Caption</label>
+        <input type="text" id="imageCaption" required placeholder="Cute Wallaby">
+        <br>
+        <label for="personal">Personal Background</label>
+        <input type="text" id="personal" required placeholder="Lived in North Carolina basically my whole life. I enjoy programming, so I’m pursuing a bachelors in Computer Science!">
+        <br>
+        <label for="professional">Professional Background</label>
+        <input type="text" id="professional" required placeholder="I have experience in full stack development. I currently work at Lynkway as a Junior Software Engineer">
+        <br>
+        <label for="academic">Academic Background</label>
+        <input type="text" id="academic" required placeholder="I’m currently a junior at UNCC with a major in computer science and a concentration in AI, gaming, and robotics.">
+        <br>
+        <label for="webdev">Background in Web Development</label>
+        <input type="text" id="webdev" required placeholder="I have experience in creating web applications but with this class I want to expand my knowledge and learn more!">
+        <br>
+        <label for="primary">Primary Computer Platform</label>
+        <input type="text" id="primary" required placeholder="Currently use both mac and windows.">
+        <br>
+        <div id="courses">
+            <label for="addCourseButton">Courses currently taking:</label>
+            <input type="text" required placeholder="ITSC-3135">
+        </div>
+        <button type="button" onclick="addCourse()">Add Course</button>
+        <button type="button" onclick="removeCourse()">Remove Last Course</button>        
+        <br>
+        <label for="funnyThing">Funny thing?</label>
+        <textarea id="funnyThing" required placeholder="I’m almost done with one piece, and I hope the live action lives up to the original show…"></textarea>
+        <br>
+
+        <label for="anythingElse">Anything else?</label>
+        <textarea id="anythingElse" required placeholder="I also enjoy working out. I’ve been doing it for the past couple years. (yes I have abs)"></textarea>
+        <br>
+
+        <label>
+            <input type="checkbox" required> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <div id="output"></div>
+    <input type="reset" value="Reset" id="resetButton" style="display: none;" onclick="resetForm()">
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
+
+</body>
+</html>
+    
