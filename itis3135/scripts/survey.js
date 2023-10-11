@@ -57,7 +57,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         <h2>
             Introduction
         </h2>
-        <img src="images/unnamed.jpg" width="500">
+        <img src="${URL.createObjectURL(image)}" width="500" alt=${imageCaption}>
         <p>
             <b>Personal Background:</b> ${personal}
         </p>
