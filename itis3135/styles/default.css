@@ -1,7 +1,13 @@
 h1{
    color:black; 
 }
-
+main {
+    min-height: 56vh;
+  }
+  
+footer {
+    margin-top: auto;
+  }
 .topnav a{
     background-color: white;
     width: 200px;
