@@ -15,30 +15,36 @@
         <h2>
            Arrays
         </h2>
-        <div>
+        <div class="text-center">
+            <div class="p-4">
             <select id="employeeSelect">
-                <option value="employee1">Sarah Johnson</option>
-                <option value="employee2">Michael Smith</option>
-                <option value="employee3">Jessica Davis</option>
-                <option value="employee4">David Brown</option>
+                <option id="default">Select an option</option>
             </select>
-            <button onclick="displayResults()">
+            </div>
+            <button class="btn btn-primary" onclick="displayResults()">
                 Display Results
             </button>
-            <button onclick="displaySalary()">
+            <button class="btn btn-primary" onclick="displaySalary()">
                 Display Salary
             </button>
-            <button onclick="addSalary()">
+            <button class="btn btn-primary" onclick="addSalary()">
                 Add Salary
             </button>
         </div>
         <div id="results"></div>
-        <table id="results_table">
-            
+        <table id="final_table" class="table">
+            <thead>
+                <tr id="table-head">
+                  <td>Name</td>
+                  <td>Salary</td>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+            </tbody>
         </table>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
-    <script src="arrays.js"></script>
+    <script src="scripts/arrays.js"></script>
 </body>
 </html>

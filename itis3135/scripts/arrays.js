@@ -1,39 +1,79 @@
-let person = [];
-let salaries = [];
+let person = ["Sarah Johnson", "Michael Smith", "Jessica Davis", "David Brown"];
+let salaries = [1000, 5000, 2340, 1020];
 
+
+const addElement = () => {
+    let current = document.getElementById("employeeSelect");
+    current.innerHTML = '';
+
+    for(let i=0; i<person.length; i++){
+    let opti = document.createElement("option");
+    opti.innerText = person[i];
+    current.appendChild(opti);}
+}
 const addSalary = () => {
-    const name = document.getElementById('employeeSelect').value;
-    const salary = prompt(`Enter salary for ${name}`);
-    
-    if (salary && !isNaN(salary)) {
+    let name = prompt("What is the name of person? ")
+    if (typeof(name) == "string"){
+        let salary = Number(prompt("What is the salary of the " + name + "? "));
+        if(typeof(salary) == "number"){
         person.push(name);
-        salaries.push(Number(salary));
-        displaySalary();
-    } else {
-        alert('Please enter a valid numeric salary.');
+        salaries.push(salary);
+        addElement()
+    }
+        else{
+            alert(typeof(salary));
+        }
+    }
+    else{
+
+        alert("Please enter a string...")
+    }
+
+};
+
+const displaySalary = () => {
+    clearTable()
+  for (let i = 0; i < salaries.length; i++) {
+    let table = document.getElementById('final_table');
+    const tableRow = table.insertRow();
+    tableRow.insertCell(0).innerHTML = person[i];
+    tableRow.insertCell(1).innerHTML = salaries[i];
+    }
+
+};
+
+const clearTable = () => {
+    let table = document.getElementById('final_table');
+    // Remove all rows except the header
+    while (table.rows.length > 1) {
+        table.deleteRow(1);
     }
 };
 
 const displayResults = () => {
-    const averageSalary = salaries.reduce((acc, val) => acc + val, 0) / salaries.length;
-    const highestSalary = Math.max(...salaries);
-    
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = `<h2>Results</h2>
-                            <p>Average Salary: ${averageSalary.toFixed(2)}</p>
-                            <p>Highest Salary: ${highestSalary}</p>`;
-};
+    let results = document.getElementById("results");
+    results.innerHTML = '';
 
-const displaySalary = () => {
-    const resultsTable = document.getElementById('results_table');
-    resultsTable.innerHTML = `<tr><th>Name</th><th>Salary</th></tr>`;
-    
-    for (let i = 0; i < person.length; i++) {
-        resultsTable.innerHTML += `<tr><td>${person[i]}</td><td>${salaries[i]}</td></tr>`;
+    let max = [0, null];
+    let average = 0
+    for(let i=0; i<salaries.length; i++)
+    {
+        average += salaries[i];
+        if (max[0]<salaries[i]){
+            max = [salaries[i], person[i]];
+        }
     }
-};
+    average /= salaries.length
 
-document.addEventListener('DOMContentLoaded', () => {
-    const nameField = document.getElementById('employeeSelect');
-    nameField.focus();
-});
+    let title = document.createElement("h2")
+    let para = document.createElement("p")
+    let para2 = document.createElement("p")
+    title.innerHTML = 'Salary Results:';
+    para.innerHTML = 'Average: '+ average;
+    para2.innerHTML = 'Max: '+ max[0];
+    results.appendChild(title);
+    results.appendChild(para);
+    results.appendChild(para2);
+    };
+
+document.body.onload = addElement;
